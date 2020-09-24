@@ -3,7 +3,8 @@
 This repository contains the Chainer implementated code used for the following paper:
 > [1] **Label-Efficient Multi-Task Segmentation using Contrastive Learning**  
 >Junichiro Iwasawa, Yuichiro Hirano, Yohei Sugawara  
->[preprint on arXiv](https://arxiv.org/)
+> Accepted to MICCAI BrainLes 2020 workshop, [preprint on arXiv](https://arxiv.org/abs/2009.11160).
+>
 >
 > **Abstract:** *Obtaining annotations for 3D medical images is expensive and time-consuming, despite its importance for automating segmentation tasks. Although multi-task learning is considered an effective method for training segmentation models using small amounts of annotated data, a systematic understanding of various subtasks is still lacking. In this study, we propose a multi-task segmentation model with a contrastive learning based subtask and compare its performance with other multi-task models, varying the number of labeled data for training. We further extend our model so that it can utilize unlabeled data through the regularization branch in a semi-supervised manner. We experimentally show that our proposed method outperforms other multi-task methods including the state-of-the-art fully supervised model when the amount of annotated data is limited.*
 
@@ -110,7 +111,7 @@ mpiexec -n 8 python3 examples/train.py \
 
 ## Results
 
-The performances of the models, trained with 6 labeled samples (`train_list_cv0_6samples1.txt`), were evaluated by the mean dice score and 95th percentile Hausdorff distance using the test dataset (`brats_split_list/test_list_cv0.txt`) ([1, Table 1]). For more detailed results, please see the paper [1].
+The performances of the models, trained with 6 labeled samples (`train_list_cv0_6samples1.txt`), were evaluated by the mean dice score and 95th percentile Hausdorff distance using the test dataset (`brats_split_list/test_list_cv0.txt`) ([[1](#Label-Efficient-Multi-Task-Segmentation-using-Contrastive-Learning)], Table 1). For more detailed results, please see the paper [[1](#Label-Efficient-Multi-Task-Segmentation-using-Contrastive-Learning)].
 
 |  | Dice (ET) | Dice (TC) | Dice (WT) | Hausdorff (ET) | Hausdorff (TC) | Hausdorff (WT) |
 |:-|:---:|:--------:|:-----------------------:|:-----------------:|:-----------------------:|:-----------------:|
