@@ -1,6 +1,6 @@
 # Label-Efficient Multi-Task Segmentation using Contrastive Learning
 
-This repository contains the Chainer implementated code used for the following paper:
+This repository contains the Chainer implemented code used for the following paper:
 > [1] **Label-Efficient Multi-Task Segmentation using Contrastive Learning**  
 >Junichiro Iwasawa, Yuichiro Hirano, Yohei Sugawara  
 > Accepted to MICCAI BrainLes 2020 workshop, [preprint on arXiv](https://arxiv.org/abs/2009.11160).
